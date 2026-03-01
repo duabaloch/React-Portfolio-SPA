@@ -19,7 +19,7 @@ const Navbar = () => {
           <a href="#skills" onClick={closeMenu}>Skills</a>
           <a href="#service" onClick={closeMenu}>Service</a>
           <a href="#projects" onClick={closeMenu}>Projects</a>
-          <a href="#blogs" onClick={closeMenu}>Blogs</a>
+          <a href="#blog" onClick={closeMenu}>Blog</a>
           <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>

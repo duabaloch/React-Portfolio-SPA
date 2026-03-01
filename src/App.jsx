@@ -9,7 +9,7 @@ import Education from './Components/Education'
 import Skills from './Components/Skills'
 import Service from './Components/Service'
 import Projects from './Components/Projects'
-import Blogs from './Components/Blogs'
+import Blog from './Components/Blog'
 import Testimonials from './Components/Testimoniols'
 import Contact from './Components/Contact'
 
@@ -26,8 +26,7 @@ function App() {
       <Skills />
       <Service />
       <Projects />
-      <Education />
-      <Blogs />
+      <Blog />
       <Testimonials />
       <Contact />
     </>
