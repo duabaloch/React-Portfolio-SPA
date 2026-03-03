@@ -155,7 +155,7 @@
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #123d4f, #0f2a3b);
-  padding: 0 2rem;
+  padding: 3rem 2rem;
   color: #e2e8f0;
 }
 
@@ -1553,5 +1553,112 @@
     min-height: 100px;
     /* adjust height for small screens */
 
+  }
+}
+
+/* ===== Footer Container ===== */
+.footer {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  padding-top: 4rem;
+  margin-top: 5rem;
+  animation: fadeUp 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 2rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* ===== Sections ===== */
+.footer-section h3 {
+  color: #38bdf8;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.footer-logo {
+  color: #38bdf8;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.footer-section a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* Underline hover effect like navbar */
+.footer-section a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #38bdf8;
+}
+
+.footer-section a:hover::after {
+  width: 100%;
+}
+
+/* ===== Bottom Section ===== */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section a::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

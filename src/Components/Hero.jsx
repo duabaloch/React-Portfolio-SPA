@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
-const roles = ["Full Stack Developer", "MERN Stack Developer", "UI Designer"];
+const roles = ["Frontend Developer", "Backend Developer", "UI Designer"];
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState("");

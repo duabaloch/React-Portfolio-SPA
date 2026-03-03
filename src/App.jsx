@@ -12,7 +12,7 @@ import Projects from './Components/Projects'
 import Blog from './Components/Blog'
 import Testimonials from './Components/Testimoniols'
 import Contact from './Components/Contact'
-
+import Footer from './Components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +29,7 @@ function App() {
       <Blog />
       <Testimonials />
       <Contact />
+      <Footer/>
     </>
   )
 }
